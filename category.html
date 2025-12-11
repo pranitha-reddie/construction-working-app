@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+
+    <style>
+
+        /* ---------- PAGE GRADIENT BACKGROUND ---------- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", Arial, sans-serif;
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+        }
+
+        /* ---------- MAIN BOX ---------- */
+        .container {
+            width: 90%;
+            max-width: 480px;
+            background: #ffffffdd;
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        /* Fade animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ---------- TITLE ---------- */
+        h2 {
+            text-align: center;
+            color: #FF6B6B;
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        /* ---------- CATEGORY LIST ---------- */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        /* ---------- CATEGORY BUTTONS ---------- */
+        a {
+            display: block;
+            padding: 14px;
+            text-align: center;
+            background: linear-gradient(135deg, #4ECDC4, #45b7ae);
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(78,205,196,0.4);
+            transition: transform 0.25s ease, box-shadow 0.25s;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(78,205,196,0.55);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Select Category</h2>
+
+        <ul>
+            <li><a href="/workers/plumber">Plumber</a></li>
+            <li><a href="/workers/electrician">Electrician</a></li>
+            <li><a href="/workers/mason">Mason</a></li>
+            <li><a href="/workers/painter">Painter</a></li>
+            <li><a href="/workers/carpenter">Carpenter</a></li>
+            <li><a href="/workers/civil_engineer">Civil Engineer</a></li>
+            <li><a href="/workers/labour(skilled)">Labour (Skilled)</a></li>
+            <li><a href="/workers/labour(unskilled)">Labour (Unskilled)</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
